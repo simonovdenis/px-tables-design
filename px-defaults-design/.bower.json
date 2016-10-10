@@ -31,7 +31,7 @@
     "tag": "v0.2.9",
     "commit": "64ee40205bedc0defcd6d05af6fabe53a2f7f970"
   },
-  "_source": "https://github.com/PredixDev/px-defaults-design.git",
+  "_source": "https://github.com/predixDev/px-defaults-design.git",
   "_target": "~0.2.0",
-  "_originalSource": "https://github.com/PredixDev/px-defaults-design.git"
+  "_originalSource": "px-defaults-design"
 }
