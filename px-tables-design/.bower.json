@@ -1,0 +1,45 @@
+{
+  "name": "px-tables-design",
+  "version": "0.3.14",
+  "authors": [
+    "General Electric",
+    "Harry Roberts <harry@csswizardry.com>"
+  ],
+  "description": "Basic table styles for Predix UI",
+  "main": "_base.tables.scss",
+  "keywords": [
+    "px",
+    "sass",
+    "tables"
+  ],
+  "homepage": "https://github.com/PredixDev/px-tables-design.git",
+  "private": false,
+  "ignore": [
+    ".*",
+    "npm-debug.log",
+    "Gruntfile.js",
+    "node_modules",
+    "bower_components",
+    "OSS_Notice.pdf",
+    ".github",
+    "scripts"
+  ],
+  "dependencies": {
+    "px-colors-design": "~0.2.0",
+    "px-defaults-design": "~0.2.0"
+  },
+  "devDependencies": {
+    "px-sass-doc": "~0.1.5",
+    "px-starter-kit-design": "^0.5.5"
+  },
+  "_release": "0.3.14",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.3.14",
+    "commit": "158c49bfdf43a0fff87cd787208f7c75f3d6b518"
+  },
+  "_source": "https://github.com/predixDev/px-tables-design.git",
+  "_target": "^0.3.14",
+  "_originalSource": "px-tables-design",
+  "_direct": true
+}
