@@ -24,7 +24,7 @@ Pass content into its light DOM by using data-slot="slotName" attributes.
       <px-sass-doc-demo selected-options="{{selectedOptions}}">
         <content select="px-sass-doc-option"></content>
         <content select="[data-slot=demoHTML]"></content>
-        <content select="[data-slot=importDemo]"></content>
+        <content select="[data-slot=import]"></content>
       </px-sass-doc-demo>
 
 @element px-sass-doc-demo
@@ -51,9 +51,9 @@ Pass content into its light DOM by using data-slot="slotName" attributes.
   <section style="position: relative;" class="u-pb++ flex flex--col">
     <div class="mega-demo flex u-ph++ u-pb++">
       <!-- Style Options Sidebar -->
-      <div class="properties u-ph+ u-pb+ u-mt+">
+      <div class$="[[_getOptionsClass(_showIfHasOptions)]]">
         <p class="epsilon">Style Options</p>
-        <content id="options" select="px-sass-doc-option"></content>
+        <content id="docOption" select="px-sass-doc-option"></content>
       </div>
 
       <!-- Demo Container -->
@@ -61,14 +61,14 @@ Pass content into its light DOM by using data-slot="slotName" attributes.
         <div class="flex flex--col">
           <div class="demo u-p+">
             <div class="flex u-mb-">
-              <section class="watch-slot">
+              <section class="flex__item watch-slot">
                 <content select="[data-slot=demoHTML]"></content>
               </section>
             </div>
             <h4>Sass Import:</h4>
             <px-clipboard copy-from="#importCodeSource">
               <section class="watch-slot" style="display:none;">
-                <content select="[data-slot=importDemo]"></content>
+                <content select="[data-slot=import]"></content>
               </section>
               <marked-element markdown="{{_importCode}}">
                 <div class="markdown-html u-mr-" id="importCodeSource"></div>
@@ -180,6 +180,28 @@ Pass content into its light DOM by using data-slot="slotName" attributes.
       _importCode: {
         type: String,
         value: ''
+      },
+
+      /**
+      * PRIVATE. If there are style options this will be set to true in '_calcOptionClass'
+      *
+      * @property _showIfHasOptions
+      * @type Boolean
+      */
+      _showIfHasOptions: {
+        type: Boolean,
+        value: false
+      },
+
+      /**
+      * PRIVATE. Keeps count of the current number of 'px-sass-doc-option' elements
+      *
+      * @property _currentOptionsChildrenCount
+      * @type Number
+      */
+      _currentOptionsChildrenCount: {
+        type: Number,
+        value: 0
       }
     },
 
@@ -196,6 +218,12 @@ Pass content into its light DOM by using data-slot="slotName" attributes.
           attributeOldValue: true,
         });
       }
+
+      // observe nodes on '<content id="docOption" select="px-sass-doc-option"></content>'
+      // pass nodes into '_calcOptionClass(node)'
+      var boundStyleOptionsAdded = this._calcOptionClass.bind(this);
+      this._observeStyleOptions = Polymer.dom(this.$.docOption).observeNodes(boundStyleOptionsAdded);
+
 
       // For deep changes we can't observe, listen for an event
       document.addEventListener('px-sass-doc-demo-updated', function(evt) {
@@ -281,6 +309,42 @@ Pass content into its light DOM by using data-slot="slotName" attributes.
           }
         }.bind(this))
       }
-    }
+    },
+
+    /**
+    * Take in child nodes from 'px-sass-doc-option' content tag
+    * The first callback will pass in all nodes, all other callbacks will only pass in changed.
+    * Because of this we need to makes sure there are options to shows
+    *
+    * If there is at least one option set _showIfHasOptions to true
+    *
+    * @method _calcOptionClass
+    * @param node
+    */
+    _calcOptionClass: function(node) {
+      this._currentOptionsChildrenCount += node.addedNodes.length;
+      this._currentOptionsChildrenCount -= node.removedNodes.length;
+      if(this._currentOptionsChildrenCount > 0) {
+        this.set('_showIfHasOptions', true);
+      } else {
+        this.set('_showIfHasOptions', false);
+      }
+    },
+
+    /**
+    * Helper function for style options container
+    * If _showIfHasOptions is false add class hidden to the container
+    * If _showIfHasOptions is true remove class hidden from the container
+    *
+    * @method _getOptionsClass
+    */
+    _getOptionsClass: function() {
+      var base = 'properties u-ph+ u-pb+ u-mt+ ';
+
+      if(!this._showIfHasOptions) {
+        base += 'hidden';
+      }
+      return base;
+    },
   });
   </script>

@@ -1,3 +1,12 @@
+v1.1.3
+==============================
+* Updated dependencies
+* Updated boilerplate files
+
+v1.1.2
+==============================
+* added new demo and auto-ghp
+
 v0.3.6
 ==============================
 * Fixed `:host` cssmin parsing bug in Firefox and Safari

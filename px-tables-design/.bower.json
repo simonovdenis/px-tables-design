@@ -1,6 +1,6 @@
 {
   "name": "px-tables-design",
-  "version": "0.3.14",
+  "version": "0.3.16",
   "authors": [
     "General Electric",
     "Harry Roberts <harry@csswizardry.com>"
@@ -15,28 +15,29 @@
   "homepage": "https://github.com/PredixDev/px-tables-design.git",
   "private": false,
   "ignore": [
-    ".*",
+    "**/.*",
     "npm-debug.log",
     "Gruntfile.js",
     "node_modules",
     "bower_components",
     "OSS_Notice.pdf",
     ".github",
-    "scripts"
+    "scripts",
+    "sassdoc.json"
   ],
   "dependencies": {
-    "px-colors-design": "~0.2.0",
-    "px-defaults-design": "~0.2.0"
+    "px-colors-design": "~0.2.20",
+    "px-defaults-design": "~0.3.0"
   },
   "devDependencies": {
-    "px-sass-doc": "~0.1.5",
-    "px-starter-kit-design": "^0.5.5"
+    "px-sass-doc": "~0.2.4",
+    "px-starter-kit-design": "^0.6.0"
   },
-  "_release": "0.3.14",
+  "_release": "0.3.16",
   "_resolution": {
     "type": "version",
-    "tag": "v0.3.14",
-    "commit": "158c49bfdf43a0fff87cd787208f7c75f3d6b518"
+    "tag": "v0.3.16",
+    "commit": "85966c85b050756499da080367691a9fd2ce1059"
   },
   "_source": "https://github.com/predixDev/px-tables-design.git",
   "_target": "^0.3.14",
