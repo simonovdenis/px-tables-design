@@ -1,6 +1,6 @@
 {
   "name": "px-tables-design",
-  "version": "0.3.16",
+  "version": "0.3.17",
   "authors": [
     "General Electric",
     "Harry Roberts <harry@csswizardry.com>"
@@ -34,7 +34,6 @@
     "px-starter-kit-design": "^0.6.0"
   },
   "resolutions": {
-    "px-functions-design": "~1.0.0",
-    "px-defaults-design": "^0.3.0"
+    "px-iconography-design": "^0.3.1"
   }
 }

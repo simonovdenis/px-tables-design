@@ -1,3 +1,19 @@
+v0.3.11
+==============================
+* updated to px-sass-doc#0.2.8
+
+v0.3.10
+==============================
+* minor style changes to demo
+
+v0.3.9
+==============================
+* removed --strip-comments from ghp.sh
+
+v0.3.8
+==============================
+* added mega demo
+
 v0.3.7
 ==============================
 * added pointer class
