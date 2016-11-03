@@ -1,6 +1,6 @@
 {
   "name": "px-sass-doc",
-  "version": "0.2.8",
+  "version": "0.2.9",
   "main": [
     "px-sass-doc.html"
   ],
@@ -52,13 +52,13 @@
     "px-buttons-design": "~0.4.12"
   },
   "homepage": "https://github.com/PredixDev/px-sass-doc",
-  "_release": "0.2.8",
+  "_release": "0.2.9",
   "_resolution": {
     "type": "version",
-    "tag": "v0.2.8",
-    "commit": "1e81141d20aaaa5b716bed957c00125c2e0ee466"
+    "tag": "v0.2.9",
+    "commit": "316b40b09b3951bac0f232fe4fc2dee7cfac4a92"
   },
   "_source": "https://github.com/PredixDev/px-sass-doc.git",
-  "_target": "~0.2.4",
+  "_target": "^0.2.9",
   "_originalSource": "px-sass-doc"
 }
