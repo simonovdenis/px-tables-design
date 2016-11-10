@@ -46,6 +46,6 @@
     "commit": "1005a5120403431c68a69df8643e5aecd1edd9a2"
   },
   "_source": "https://github.com/predixdev/px-clipboard.git",
-  "_target": "~0.1.3",
+  "_target": "~0.1.9",
   "_originalSource": "px-clipboard"
 }
