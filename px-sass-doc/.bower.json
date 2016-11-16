@@ -1,6 +1,6 @@
 {
   "name": "px-sass-doc",
-  "version": "0.2.10",
+  "version": "0.2.11",
   "main": [
     "px-sass-doc.html"
   ],
@@ -41,7 +41,7 @@
     "iron-demo-helpers": "^1.2.3",
     "px-polymer-font-awesome": "^0.1.8",
     "px-api-viewer": "^0.1.0",
-    "px-demo-snippet": "^0.6.4",
+    "px-demo-snippet": "^0.6.9",
     "px-list-inline-design": "^0.2.11",
     "px-headings-design": "^0.2.14",
     "px-actionable-text-icons-design": "^0.1.0",
@@ -52,11 +52,11 @@
     "px-buttons-design": "~0.4.12"
   },
   "homepage": "https://github.com/PredixDev/px-sass-doc",
-  "_release": "0.2.10",
+  "_release": "0.2.11",
   "_resolution": {
     "type": "version",
-    "tag": "v0.2.10",
-    "commit": "575d0db079b3ab52b5b69d3eaadba58182958901"
+    "tag": "v0.2.11",
+    "commit": "661e2dd7ddb850526c4ae0a7b2e60076a11dba73"
   },
   "_source": "https://github.com/PredixDev/px-sass-doc.git",
   "_target": "^0.2.10",
