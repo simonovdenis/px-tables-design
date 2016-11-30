@@ -1,3 +1,10 @@
+v1.0.0
+==================
+* Bringing back css vars major
+
+v0.3.24
+==================
+* removing css vars patch
 
 v0.3.23
 ==================

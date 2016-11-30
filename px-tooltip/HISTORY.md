@@ -1,8 +1,34 @@
+v0.9.16
+==================
+* changing all devDeps to ^
+
+v0.9.15
+==================
+* Update px-theme to 2.0.1 and update test fixtures
+
+v0.9.14
+==================
+* turned max width into a mixin
+
+v0.9.13
+==================
+* give (hidden) default values to mouseCoords in case the tooltip has been requried to be shown without the mouse positions being known yet
+
+v0.9.12
+==================
+* update dependencies for dropdown
+
+v0.9.11
+==================
+* removing px-theme style call
+
+v0.9.10
+==================
+* ensure smart orientation works with followMouse
 
 v0.9.9
 ==================
 * changing Gruntfile.js to gulpfile.js
-
 
 v0.9.8
 ==================
