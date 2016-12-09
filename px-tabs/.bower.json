@@ -1,6 +1,6 @@
 {
   "name": "px-tabs",
-  "version": "0.5.12",
+  "version": "0.5.13",
   "main": [
     "px-tabs.html"
   ],
@@ -39,11 +39,11 @@
     "px-toggle-design": "^0.2.12"
   },
   "homepage": "https://github.com/PredixDev/px-tabs",
-  "_release": "0.5.12",
+  "_release": "0.5.13",
   "_resolution": {
     "type": "version",
-    "tag": "v0.5.12",
-    "commit": "66e5d7fcd567b47843e61cc29dbafd6fbc1255f4"
+    "tag": "v0.5.13",
+    "commit": "0fa5c65e477653557c3616bbc68e22ffd1465f78"
   },
   "_source": "https://github.com/PredixDev/px-tabs.git",
   "_target": "~0.5.2",
