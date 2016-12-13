@@ -1,6 +1,6 @@
 {
   "name": "px-widths-responsive-design",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "authors": [
     "General Electric",
     "Harry Roberts <harry@csswizardry.com>"
@@ -24,13 +24,13 @@
   ],
   "dependencies": {
     "inuit-responsive-tools": "~0.1.3",
-    "px-widths-design": "https://github.com/PredixDev/px-widths-design.git#~0.3.0"
+    "px-widths-design": "^0.3.18"
   },
-  "_release": "0.4.0",
+  "_release": "0.4.1",
   "_resolution": {
     "type": "version",
-    "tag": "v0.4.0",
-    "commit": "724743c3f11f4111d999d849b2f90822a87b3359"
+    "tag": "v0.4.1",
+    "commit": "551decd0746b6a2ad11cc78b653262706569099c"
   },
   "_source": "https://github.com/predixDev/px-widths-responsive-design.git",
   "_target": "^0.4.0",
